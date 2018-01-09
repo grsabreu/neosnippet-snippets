@@ -202,4 +202,11 @@ snippet     import-default-member
 abbr        import defaultMember, { member, ... } from "module-name";
 options     head
   import ${1:defaultMember}, { ${2:MEMBERS} } from "${0:TARGET}";
+
+snippet     schema
+options     head
+  export const ${1:name}Schema = `
+  `
   
+  export const ${1:name}Resolvers = {
+  }
