@@ -1,0 +1,11 @@
+snippet component
+abbr recomp
+options head
+  let component = ReasonReact.statelessComponent("${1:component_name}");
+  
+  let make = (_children) => {
+    ...component,
+    render: _self => {
+      ${0:TARGET}
+    }
+  };
